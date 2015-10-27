@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'ember-data-bug',
+    modulePrefix: 'ember-computed-property-bug',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',

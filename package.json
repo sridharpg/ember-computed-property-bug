@@ -1,7 +1,7 @@
 {
-  "name": "ember-data-bug",
+  "name": "ember-computed-property-bug",
   "version": "0.0.0",
-  "description": "Small description for ember-data-bug goes here",
+  "description": "Small description for ember-computed-property-bug goes here",
   "private": true,
   "directories": {
     "doc": "doc",
