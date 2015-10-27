@@ -1,3 +1,6 @@
-<h2 id="title">Welcome to Ember</h2>
+<h2 id="title">Fruits (Ember VERSION {{emberVersion}})</h2>
+"{{basket.fruitList}}"
 
-{{outlet}}
+{{#if hasBug}}
+  <button {{action "refresh"}}>See the bug? Hit Refresh</button>
+{{/if}}
