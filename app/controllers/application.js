@@ -9,6 +9,14 @@ export default Ember.Controller.extend({
   	}
   }),
 
+  fruitList: Ember.computed('basket.fruits.length', 'basket.fruits.@each.name', {
+    get: function() {
+      return this.get('basket.fruits').map((fruit) => {
+        return fruit.get('name');
+      }).join(', ');
+    }
+  }),
+
   hasBug: Ember.computed('emberVersion', {
   	get: function() {
       return this.get('emberVersion') === '2.1.0';
@@ -17,7 +25,7 @@ export default Ember.Controller.extend({
 
   actions: {
     refresh: function () {
-      this.get('basket').notifyPropertyChange('fruits.length');
+      this.notifyPropertyChange('basket.fruits.length');
     }
   }
 });
