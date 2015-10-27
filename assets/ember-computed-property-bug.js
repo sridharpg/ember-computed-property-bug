@@ -160,7 +160,7 @@ define('ember-computed-property-bug/router', ['exports', 'ember', 'ember-compute
   'use strict';
 
   var Router = Ember['default'].Router.extend({
-    location: config['default'].locationType
+    location: "hash"
   });
 
   Router.map(function () {});
